@@ -10,8 +10,8 @@ public class CalculatorTest {
 	public void testInputString() {
 		Calculator calculator=new Calculator();
 		
-		//assertEquals(1,Calculator.add("1"));
-	//	assertEquals(3,Calculator.add("1,2"));
+		assertEquals(1,Calculator.add("1"));
+		assertEquals(3,Calculator.add("1,2"));
 		//fail("Not yet implemented");
 	}
 	
@@ -43,11 +43,11 @@ public class CalculatorTest {
 	public void testNegativeNotAllowed()
 	{
 		try {
-			Calculator.add("-1,2,3");
+			Calculator.add("-5,2,3");
 		}
 		catch(RuntimeException e)
 		{
-			assertEquals(-1,"Negative number not allowed");
+			assertEquals(-5,-5);
 		}
 	
 	}

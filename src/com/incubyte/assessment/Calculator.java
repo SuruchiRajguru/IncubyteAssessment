@@ -4,10 +4,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Calculator {
-	//for empty string
+	
 	public static int add(String string) {
-		return 0;
+		if(string.isEmpty())
+		{
+			return 0;
+		}
+		else if(string.contains(","))
+		{
+			String[] input=string.split(",");
+			return Integer.parseInt(input[0])+Integer.parseInt(input[1]);
+		}
+		else
+		{
+			return Integer.parseInt(string);
+		}
 	}
+	
+	
 
 	public static int add(String number,String delimeter)
 	{
