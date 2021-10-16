@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Calculator {
 	
-	public static int add(String string) {
+	public static int add(String string){
 		if(string.isEmpty())
 		{
 			return 0;

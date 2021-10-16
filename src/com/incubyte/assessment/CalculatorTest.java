@@ -7,7 +7,7 @@ import org.junit.Test;
 public class CalculatorTest {
 
 	@Test
-	public void testInputString() {
+	public void testInputString(){
 		Calculator calculator=new Calculator();
 		
 		assertEquals(1,Calculator.add("1"));
